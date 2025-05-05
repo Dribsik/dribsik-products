@@ -810,7 +810,7 @@
     --title-color: #ffffff;
     --subtext-color: #757575;
     --bg-color: #2f303a;
-    --subtitle-color: #ff0000;
+    --subtitle-color: #b971f3;
     --text2-color: #000;
   }
   
@@ -1157,3 +1157,68 @@
     gap: 30px;
     justify-content: center;
   }
+  .warning-art1::before {
+    content: "";
+    display: block;
+    width: 270px;
+    height: 120px;
+    border-radius: 4px;
+    background: #f5f4fa;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url("./img/wifinorm.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 70px 70px;
+  }
+  
+  .warning-art2::before {
+    content: "";
+    display: block;
+    width: 270px;
+    height: 120px;
+    border-radius: 4px;
+    background: #f5f4fa;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url("./img/chsinorm.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 70px 70px;
+  }
+  
+  .warning-art3::before {
+    content: "";
+    display: block;
+    width: 270px;
+    height: 120px;
+    border-radius: 4px;
+    background: #f5f4fa;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url("./img/nootbooknorm.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 70px 70px;
+  }
+  
+  .warning-art4::before {
+    content: "";
+    display: block;
+    width: 270px;
+    height: 120px;
+    border-radius: 4px;
+    background: #f5f4fa;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url("./img/cosmonavnormal.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 70px 70px;
+  }
+  ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin-left: 0;
+  }
+  
