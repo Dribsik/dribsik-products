@@ -320,7 +320,7 @@
   .list-photo {
     width: 370px;
     height: 294px;
-    background-color: lightgray;
+    background-color: rgb(255, 0, 0);
     margin-bottom: 20px;
   }
   
@@ -354,9 +354,9 @@
   :root {
     --text-color: #212121;
     --title-color: #ffffff;
-    --subtext-color: #757575;
-    --bg-color: #2f303a;
-    --subtitle-color: #2196f3;
+    --subtext-color: #000000;
+    --bg-color: #000000;
+    --subtitle-color: #000000;
     --text2-color: #000;
   }
   
