@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+    integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./index.html" />
+  <link rel="stylesheet" href="./style.css" />
+  <style>
+    .list-item {
+      position: relative;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .list-item:hover {
+      transform: scale(1.05);
+      box-shadow: 0 15px 9999px rgba(0, 0, 0, 0.2);
+      z-index: 10;
+    }
+
+    .cart-icon {
+      position: absolute;
+      bottom: 50px;
+      right: 10px;
+      background: #fff;
+      border-radius: 50%;
+      padding: 6px;
+      cursor: pointer;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+    }
+
+    .cart-icon img {
+      width: 60px;
+      height: 60px;
+    }
+
+    .header-cart {
+      margin-left: auto;
+    }
+
+    .header-cart img {
+      width: 60px;
+      height: 60px;
+    }
+  </style>
+</head>
+
+<body>
+  <header class="header">
+    <div class="container header-container">
+      <h2 class="header-title"><span class="header-span">Dribsik</span>products</h2>
+      <ul class="header-list">
+        <li class="header-item">
+          <a class="header-link" href="./index.html">головна</a>
+        </li>
+        <li class="header-item">
+          <a class="header-link" href="./products.html">товар</a>
+        </li>
+        <li class="header-item">
+          <a class="header-link" href="./telegram.html">Контакти</a>
+        </li>
+      </ul>
+      <a class="header-mail header-info header-contact" href="mailto:info@devstudio.com"></a>
+      <a class="header-tel header-info header-contact" href="tel:+380961111111"></a>
+    </div>
+    <div class="header-cart">
+      <a href="./korzina.html"><img src="./img/zina.jpg" alt="Cart" /></a>
+    </div>
+  </header>
+<section class="list">
+    <div class="container">
+      <ul class="list-list">
+        <li class="list-item">
+          <img class="list-photo" src="./img/shortssssssssss.jpeg" alt="Лабораторне Обладняння" />
+          <div class="list-box">
+            <h3 class="list-title">Erick Emanuelі</h3>
+            <h4 class="list-subtitle">1200 UAH</h4>
+            <span class="cart-icon">
+              <img src="./img/zina.jpg" alt="Add to Cart" />
+            </span>
+          </div>
+        </li>
+        <li class="list-item">
+          <img class="list-photo" src="./img/fooooooooooooooot.jpeg" alt="Узі" />
+          <div class="list-box">
+            <h3 class="list-title">Marcelo burlon</h3>
+            <h4 class="list-subtitle">1600 UAH</h4>
+            <span class="cart-icon">
+              <img src="./img/zina.jpg" alt="Add to Cart" />
+            </span>
+          </div>
+        </li>
+        <li class="list-item">
+          <img class="list-photo" src="./img/nononononononnono.png" alt="Ресторан Seafood" />
+          <div class="list-box">
+            <h3 class="list-title">немає в наявності</h3>
+            <h4 class="list-subtitle">немає</h4>
+            <span class="cart-icon">
+              <img src="./img/zina.jpg" alt="Add to Cart" />
+            </span>
+          </div>
+          
+        <li class="list-item">
+
+
+
+        </li>
+    </div>
+    </li>
+    <li class="list-item">
+      </ul>
+      </div>
+  </section>
+  <section class="button">
+    <div class="container">
+      <ul class="button-list">
+        <li class="button-item">
+          <a class="button-buttton" href="./products.html">сторнка 1</a>
+        </li>
+        <li class="button-item">
+          <a class="button-buttton" href="./сторінка-2.html">сторінка 2</a>
+        </li>
+        <li class="button-item">
+          <a class="button-buttton" href="./storonka-3.html">сторінка 3</a>
+        </li>
+        <li class="button-item">
+          <a class="button-buttton" href="./storinka-4.html">сторінка 4</a>
+        </li>
+        <li class="button-item">
+          <a class="button-buttton" href="./storinka-5.html">сторінка 5</a>
+        </li>
+        <li class="button-item">
+          <a class="button-buttton" href="./none.html">сторінка none</a>
+        </li>
+      </ul>
+    </div>
+  </section>
