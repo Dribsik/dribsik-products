@@ -1,394 +1,495 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
-      integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link rel="stylesheet" href="./index.html" />
-    <link rel="stylesheet" href="./style.css" />
-  </head>
-  <body>
-    <header class="header">
-      <div class="container header-container">
-        <h2 class="header-title"><span class="header-span">Dribsik</span>products</h2>
-        <ul class="header-list">
-          <li class="header-item">
-            <a class="header-link" href="./index.html">головна</a>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+    integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./index.html" />
+  <link rel="stylesheet" href="./style.css" />
+  <style>
+    .list-item {
+      position: relative;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .list-item:hover {
+      transform: scale(1.05);
+      box-shadow: 0 15px 9999px rgba(0, 0, 0, 0.2);
+      z-index: 10;
+    }
+
+    .cart-icon {
+      position: absolute;
+      bottom: 50px;
+      right: 10px;
+      background: #fff;
+      border-radius: 50%;
+      padding: 6px;
+      cursor: pointer;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+    }
+
+    .cart-icon img {
+      width: 60px;
+      height: 60px;
+    }
+
+    .header-cart {
+      margin-left: auto;
+    }
+
+    .header-cart img {
+      width: 60px;
+      height: 60px;
+    }
+  </style>
+</head>
+
+<body>
+  <header class="header">
+    <div class="container header-container">
+      <h2 class="header-title"><span class="header-span">Dribsik</span>products</h2>
+      <ul class="header-list">
+        <li class="header-item">
+          <a class="header-link" href="./index.html">головна</a>
+        </li>
+        <li class="header-item">
+          <a class="header-link" href="./products.html">товар</a>
+        </li>
+        <li class="header-item">
+          <a class="header-link" href="./telegram.html">Контакти</a>
+        </li>
+      </ul>
+      <a class="header-mail header-info header-contact" href="mailto:info@devstudio.com"></a>
+      <a class="header-tel header-info header-contact" href="tel:+380961111111"></a>
+    </div>
+    <div class="header-cart">
+      <a href="./korzina.html"><img src="./img/zina.jpg" alt="Cart" /></a>
+    </div>
+  </header>
+  <main>
+    <!-- button -->
+    <section class="button">
+      <div class="container">
+        <ul class="button-list">
+          <li class="button-item">
+            <a class="button-buttton" href="./products.html">Усі</a>
           </li>
-          <li class="header-item">
-            <a class="header-link" href="./products.html">товар</a>
+          <li class="button-item">
+            <a class="button-buttton" href="./OUTLET.HTML">OUTLET</a>
           </li>
-          <li class="header-item">
-            <a class="header-link" href="./telegram.html">Контакти</a>
+          <li class="button-item">
+            <a class="button-buttton" href="./telegram.html">TELEGRAM channel</a>
           </li>
-        </ul>
-        <a
-          class="header-mail header-info header-contact"
-          href="mailto:info@devstudio.com"
-          ></a
-        >
-        <a
-          class="header-tel header-info header-contact"
-          href="tel:+380961111111"
-          ></a
-        >
-      </div>
-    </header>
-    <main>
-      <!-- button -->
-      <section class="button">
-        <div class="container">
-          <ul class="button-list">
-            <li class="button-item">
-              <a class="button-buttton" href="./products.html">Усі</a>
-            </li>
-            <li class="button-item">
-              <a class="button-buttton" href="./OUTLET.HTML">OUTLET</a>
-            </li>
-            <li class="button-item">
-              <a class="button-buttton" href="./telegram.html">TELEGRAM channel</a>
-            </li>
-          </ul>
-        </div>
-      </section>
-      
-      <!-- list -->
-      <section class="list">
-        <div class="container">
-          <ul class="list-list">
-            <li class="list-item">
-              <img
-                class="list-photo"
-                src="./img/nikesuperme.png"
-                alt="Supreme x Nike Air Force 1 Collaboration"
-              />
-              <div class="list-box">
-                <h3 class="list-title">Supreme x Nike Air Force 1 Collaboration</h3>
-                <h4 class="list-subtitle">2000 UAH</h4>
-              </div>
-            </li>
-            <li class="list-item">
-              <img
-                class="list-photo"
-                src="./img/dewnimsumer.jpg"
-                alt="Denim Tears"
-              />
-              <div class="list-box">
-                <h3 class="list-title">Denim Tears</h3>
-                <h4 class="list-subtitle"> 3000 UAH</h4>
-              </div>
-            </li>
-            <li class="list-item">
-              <img
-                class="list-photo"
-                src="./img/NIKESOX.jpg"
-                alt="Ресторан Seafood"
-              />
-              <div class="list-box">
-                <h3 class="list-title">Nike Shox TL ‘Metallic Hematite’ Signature Footwear</h3>
-                <h4 class="list-subtitle"> 2800 UAH</h4>
-              </div>
-            </li>
-            <li class="list-item">
-              <img
-                class="list-photo"
-                src="./img/PRADA.jpg"
-                alt="Лазерні установки"
-              />
-              <div class="list-box">
-                <h3 class="list-title">PRADA 17 ws</h3>
-                <h4 class="list-subtitle">1000 UAH</h4>
-              </div>
-            </li>
-            <li class="list-item">
-              <img
-                class="list-photo"
-                src="./img/POLO.jpg"
-                alt="Проєкт Boxes"
-              />
-              <div class="list-box">
-                <h3 class="list-title">POLO CHICAGO</h3>
-                <h4 class="list-subtitle">1900 UAH</h4>
-              </div>
-            </li>
-            <li class="list-item">
-              <img
-                class="list-photo"
-                src="./img/LEVIN.jpg"
-                alt="Inspiration has no Borders"
-              />
-              <div class="list-box">
-                <h3 class="list-title">LEVIN SHOES</h3>
-                <h4 class="list-subtitle">4500 UAH</h4>
-              </div>
-            </li>
-            <li class="list-item">
-              
-            
-              
-             
-          </ul>
-        </div>
-      </section>
-      <section class="list">
-        <div class="container">
-          <ul class="list-list">
-            <li class="list-item">
-              <img
-                class="list-photo"
-                src="./img/ICE CREAM SHORTS.jpg"
-                alt="Лабораторне Обладняння"
-              />
-              <div class="list-box">
-                <h3 class="list-title">ICE CREAM</h3>
-                <h4 class="list-subtitle">2000 UAH</h4>
-              </div>
-            </li>
-            <li class="list-item">
-              <img
-                class="list-photo"
-                src="./img/CHROME HEARTS.jpg"
-                alt="Узі"
-              />
-              <div class="list-box">
-                <h3 class="list-title">CHROME HEARTS</h3>
-                <h4 class="list-subtitle"> 3000 UAH</h4>
-              </div>
-            </li>
-            <li class="list-item">
-              <img
-                class="list-photo"
-                src="./img/DENIM.jpg"
-                alt="Ресторан Seafood"
-              />
-              <div class="list-box">
-                <h3 class="list-title">DENIM TEARS</h3>
-                <h4 class="list-subtitle"> 3000 UAH</h4>
-              </div>
-            </li>
-            <li class="list-item">
-              <img
-                class="list-photo"
-                src="./img/NIKE1.jpg"
-                alt="Лазерні установки"
-              />
-              <div class="list-box">
-                <h3 class="list-title">Nike Dunk Low Toasty Rift Blue </h3>
-                <h4 class="list-subtitle">4000 UAH</h4>
-              </div>
-            </li>
-            <li class="list-item">
-              <img
-                class="list-photo"
-                src="./img/HELLSTAR.jpg"
-                alt="Проєкт Boxes"
-              />
-              <div class="list-box">
-                <h3 class="list-title">HELLSTAR</h3>
-                <h4 class="list-subtitle">2200 UAH</h4>
-              </div>
-            </li>
-            <li class="list-item">
-              <img
-                class="list-photo"
-                src="./img/POLOI2.jpg"
-                alt="Inspiration has no Borders"
-              />
-              <div class="list-box">
-                <h3 class="list-title">POLO</h3>
-                <h4 class="list-subtitle">1999 UAH</h4>
-              </div>
-            </li>
-            <li class="list-item">
-              
-            
-              
-             
-          </ul>
-        </div>
-      </section>
-      <section class="list">
-        <div class="container">
-          <ul class="list-list">
-            <li class="list-item">
-              <img
-                class="list-photo"
-                src="./img/SUNA2.jpg"
-                alt="Лабораторне Обладняння"
-              />
-              <div class="list-box">
-                <h3 class="list-title">КОСТЮМ SYNA WORLD</h3>
-                <h4 class="list-subtitle">2600 UAH</h4>
-              </div>
-            </li>
-            <li class="list-item">
-              <img
-                class="list-photo"
-                src="./img/BALENCIAGA.jpg"
-                alt="Узі"
-              />
-              <div class="list-box">
-                <h3 class="list-title">ХУДІ BALENCIAGA</h3>
-                <h4 class="list-subtitle"> 2900 UAH</h4>
-              </div>
-            </li>
-            <li class="list-item">
-              <img
-                class="list-photo"
-                src="./img/ARTERIX.jpg"
-                alt="Ресторан Seafood"
-              />
-              <div class="list-box">
-                <h3 class="list-title">ВІТРОВКА ARTERYX</h3>
-                <h4 class="list-subtitle"> 3000 UAH</h4>
-              </div>
-            </li>
-            <li class="list-item">
-              <img
-                class="list-photo"
-                src="./img/S5IDER.jpg"
-                alt="Лазерні установки"
-              />
-              <div class="list-box">
-                <h3 class="list-title">ХУДІ ATLANTA SP5DER</h3>
-                <h4 class="list-subtitle">2900 UAH</h4>
-              </div>
-            </li>
-            <li class="list-item">
-              <img
-                class="list-photo"
-                src="./img/NIKE-STYSI.jpg"
-                alt="Проєкт Boxes"
-              />
-              <div class="list-box">
-                <h3 class="list-title">ШТАНИ NIKE STUSSY</h3>
-                <h4 class="list-subtitle">1500 UAH</h4>
-              </div>
-            </li>
-            <li class="list-item">
-              <img
-                class="list-photo"
-                src="./img/BAPE.jpg"
-                alt="Inspiration has no Borders"
-              />
-              <div class="list-box">
-                <h3 class="list-title">ШЕРП BAPE</h3>
-                <h4 class="list-subtitle">1900 UAH</h4>
-              </div>
-            </li>
-            <li class="list-item">
-              
-            
-              
-             
-          </ul>
-        </div>
-      </section>
-      <section class="list">
-        <div class="container">
-          <ul class="list-list">
-            <li class="list-item">
-              <img
-                class="list-photo"
-                src="./img/GALERY.jpg"
-                alt="Лабораторне Обладняння"
-              />
-              <div class="list-box">
-                <h3 class="list-title">ЗІПКА GALLERY DEPT</h3>
-                <h4 class="list-subtitle">2400 UAH</h4>
-              </div>
-            </li>
-            <li class="list-item">
-              <img
-                class="list-photo"
-                src="./img/BIGBOY.jpg"
-                alt="Узі"
-              />
-              <div class="list-box">
-                <h3 class="list-title">ДЖИНСИ POLAR BIG BOY</h3>
-                <h4 class="list-subtitle"> 2400 UAH</h4>
-              </div>
-            </li>
-            <li class="list-item">
-              <img
-                class="list-photo"
-                src="./img/VANS-1.jpg"
-                alt="Ресторан Seafood"
-              />
-              <div class="list-box">
-                <h3 class="list-title">VANS</h3>
-                <h4 class="list-subtitle">3000 UAH</h4>
-              </div>
-            </li>
-            <li class="list-item">
-              <img
-                class="list-photo"
-                src="./img/LYIVI.jpg"
-                alt="Лазерні установки"
-              />
-              <div class="list-box">
-                <h3 class="list-title">Барсетка Louis Vuitton</h3>
-                <h4 class="list-subtitle">4000 UAH</h4>
-              </div>
-            </li>
-            <li class="list-item">
-              <img
-                class="list-photo"
-                src="./img/QUES.jpg"
-                alt="Проєкт Boxes"
-              />
-              <div class="list-box">
-                <h3 class="list-title">GUESS</h3>
-                <h4 class="list-subtitle">2000 UAH</h4>
-              </div>
-            </li>
-            <li class="list-item">
-              <img
-                class="list-photo"
-                src="./img/COACH.jpg"
-                alt="Inspiration has no Borders"
-              />
-              <div class="list-box">
-                <h3 class="list-title">COACH</h3>
-                <h4 class="list-subtitle">3000 UAH</h4>
-              </div>
-            </li>
-            <li class="list-item">
-          </ul>
-        </div>
-      </section>
-    </main>
-    <footer class="footer">
-      <div class="container footer-container">
-        <h2 class="footer-title"><span class="footer-span">Dribsik</span>products</h2>
-        <ul class="footer-list">
-          <li class="footer-item">
-            <address class="foooter-address">
-                
-            </address>
-          </li>
-          <li class="footer-item">
-            <h4 class="footer-mail"></h4>
-          </li>
-          <li class="footer-item">
-            <h5 class="footer-tel"></h5>
+          <li class="button-item">
+            <a class="button-buttton" href="./telegram.html">TELEGRAM channel</a>
           </li>
         </ul>
       </div>
-    </footer>
-  </body>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </section>
+
+    <!-- list -->
+    <section class="list">
+      <div class="container">
+        <ul class="list-list">
+          <li class="list-item">
+            <img class="list-photo" src="./img/nikesuperme.png" alt="Supreme x Nike Air Force 1 Collaboration" />
+            <div class="list-box">
+              <h3 class="list-title">Supreme x Nike Air Force 1 Collaboration</h3>
+              <h4 class="list-subtitle">2000 UAH</h4>
+              <span class="cart-icon">
+                <img src="./img/zina.jpg" alt="Add to Cart" />
+              </span>
+            </div>
+          </li>
+          <li class="list-item">
+            <img class="list-photo" src="./img/dewnimsumer.jpg" alt="Denim Tears" />
+            <div class="list-box">
+              <h3 class="list-title">Denim Tears</h3>
+              <h4 class="list-subtitle"> 3000 UAH</h4>
+              <span class="cart-icon">
+                <img src="./img/zina.jpg" alt="Add to Cart" />
+              </span>
+            </div>
+          </li>
+          <li class="list-item">
+            <img class="list-photo" src="./img/NIKESOX.jpg" alt="Ресторан Seafood" />
+            <div class="list-box">
+              <h3 class="list-title">Nike Shox TL ‘Metallic Hematite’ Signature Footwear</h3>
+              <h4 class="list-subtitle"> 2800 UAH</h4>
+              <span class="cart-icon">
+                <img src="./img/zina.jpg" alt="Add to Cart" />
+              </span>
+            </div>
+          </li>
+          <li class="list-item">
+            <img class="list-photo" src="./img/PRADA.jpg" alt="Лазерні установки" />
+            <div class="list-box">
+              <h3 class="list-title">PRADA 17 ws</h3>
+              <h4 class="list-subtitle">1000 UAH</h4>
+              <span class="cart-icon">
+                <img src="./img/zina.jpg" alt="Add to Cart" />
+              </span>
+            </div>
+          </li>
+          <li class="list-item">
+            <img class="list-photo" src="./img/POLO.jpg" alt="Проєкт Boxes" />
+            <div class="list-box">
+              <h3 class="list-title">POLO CHICAGO</h3>
+              <h4 class="list-subtitle">1900 UAH</h4>
+              <span class="cart-icon">
+                <img src="./img/zina.jpg" alt="Add to Cart" />
+              </span>
+            </div>
+          </li>
+          <li class="list-item">
+            <img class="list-photo" src="./img/LEVIN.jpg" alt="Inspiration has no Borders" />
+            <div class="list-box">
+              <h3 class="list-title">LEVIN SHOES</h3>
+              <h4 class="list-subtitle">4500 UAH</h4>
+              <span class="cart-icon">
+                <img src="./img/zina.jpg" alt="Add to Cart" />
+              </span>
+            </div>
+          </li>
+          <li class="list-item">
+
+
+
+
+        </ul>
+      </div>
+    </section>
+    <section class="list">
+      <div class="container">
+        <ul class="list-list">
+          <li class="list-item">
+            <img class="list-photo" src="./img/ICE CREAM SHORTS.jpg" alt="Лабораторне Обладняння" />
+            <div class="list-box">
+              <h3 class="list-title">ICE CREAM</h3>
+              <h4 class="list-subtitle">2000 UAH</h4>
+              <span class="cart-icon">
+                <img src="./img/zina.jpg" alt="Add to Cart" />
+              </span>
+            </div>
+          </li>
+          <li class="list-item">
+            <img class="list-photo" src="./img/CHROME HEARTS.jpg" alt="Узі" />
+            <div class="list-box">
+              <h3 class="list-title">CHROME HEARTS</h3>
+              <h4 class="list-subtitle"> 3000 UAH</h4>
+              <span class="cart-icon">
+                <img src="./img/zina.jpg" alt="Add to Cart" />
+              </span>
+            </div>
+          </li>
+          <li class="list-item">
+            <img class="list-photo" src="./img/DENIM.jpg" alt="Ресторан Seafood" />
+            <div class="list-box">
+              <h3 class="list-title">DENIM TEARS</h3>
+              <h4 class="list-subtitle"> 3000 UAH</h4>
+              <span class="cart-icon">
+                <img src="./img/zina.jpg" alt="Add to Cart" />
+              </span>
+            </div>
+          </li>
+          <li class="list-item">
+            <img class="list-photo" src="./img/NIKE1.jpg" alt="Лазерні установки" />
+            <div class="list-box">
+              <h3 class="list-title">Nike Dunk Low Toasty Rift Blue </h3>
+              <h4 class="list-subtitle">4000 UAH</h4>
+              <span class="cart-icon">
+                <img src="./img/zina.jpg" alt="Add to Cart" />
+              </span>
+            </div>
+          </li>
+          <li class="list-item">
+            <img class="list-photo" src="./img/HELLSTAR.jpg" alt="Проєкт Boxes" />
+            <div class="list-box">
+              <h3 class="list-title">HELLSTAR</h3>
+              <h4 class="list-subtitle">2200 UAH</h4>
+              <span class="cart-icon">
+                <img src="./img/zina.jpg" alt="Add to Cart" />
+              </span>
+            </div>
+          </li>
+          <li class="list-item">
+            <img class="list-photo" src="./img/POLOI2.jpg" alt="Inspiration has no Borders" />
+            <div class="list-box">
+              <h3 class="list-title">POLO</h3>
+              <h4 class="list-subtitle">1999 UAH</h4>
+              <span class="cart-icon">
+                <img src="./img/zina.jpg" alt="Add to Cart" />
+              </span>
+            </div>
+          </li>
+          <li class="list-item">
+
+
+
+
+        </ul>
+      </div>
+    </section>
+    <section class="list">
+      <div class="container">
+        <ul class="list-list">
+          <li class="list-item">
+            <img class="list-photo" src="./img/SUNA2.jpg" alt="Лабораторне Обладняння" />
+            <div class="list-box">
+              <h3 class="list-title">КОСТЮМ SYNA WORLD</h3>
+              <h4 class="list-subtitle">2600 UAH</h4>
+              <span class="cart-icon">
+                <img src="./img/zina.jpg" alt="Add to Cart" />
+              </span>
+            </div>
+          </li>
+          <li class="list-item">
+            <img class="list-photo" src="./img/BALENCIAGA.jpg" alt="Узі" />
+            <div class="list-box">
+              <h3 class="list-title">ХУДІ BALENCIAGA</h3>
+              <h4 class="list-subtitle"> 2900 UAH</h4>
+              <span class="cart-icon">
+                <img src="./img/zina.jpg" alt="Add to Cart" />
+              </span>
+            </div>
+          </li>
+          <li class="list-item">
+            <img class="list-photo" src="./img/ARTERIX.jpg" alt="Ресторан Seafood" />
+            <div class="list-box">
+              <h3 class="list-title">ВІТРОВКА ARTERYX</h3>
+              <h4 class="list-subtitle"> 3000 UAH</h4>
+              <span class="cart-icon">
+                <img src="./img/zina.jpg" alt="Add to Cart" />
+              </span>
+            </div>
+          </li>
+          <li class="list-item">
+            <img class="list-photo" src="./img/S5IDER.jpg" alt="Лазерні установки" />
+            <div class="list-box">
+              <h3 class="list-title">ХУДІ ATLANTA SP5DER</h3>
+              <h4 class="list-subtitle">2900 UAH</h4>
+              <span class="cart-icon">
+                <img src="./img/zina.jpg" alt="Add to Cart" />
+              </span>
+            </div>
+          </li>
+          <li class="list-item">
+            <img class="list-photo" src="./img/NIKE-STYSI.jpg" alt="Проєкт Boxes" />
+            <div class="list-box">
+              <h3 class="list-title">ШТАНИ NIKE STUSSY</h3>
+              <h4 class="list-subtitle">1500 UAH</h4>
+              <span class="cart-icon">
+                <img src="./img/zina.jpg" alt="Add to Cart" />
+              </span>
+            </div>
+          </li>
+          <li class="list-item">
+            <img class="list-photo" src="./img/BAPE.jpg" alt="Inspiration has no Borders" />
+            <div class="list-box">
+              <h3 class="list-title">ШЕРП BAPE</h3>
+              <h4 class="list-subtitle">1900 UAH</h4>
+              <span class="cart-icon">
+                <img src="./img/zina.jpg" alt="Add to Cart" />
+              </span>
+            </div>
+          </li>
+          <li class="list-item">
+
+
+
+
+        </ul>
+      </div>
+    </section>
+    <section class="list">
+      <div class="container">
+        <ul class="list-list">
+          <li class="list-item">
+            <img class="list-photo" src="./img/GALERY.jpg" alt="Лабораторне Обладняння" />
+            <div class="list-box">
+              <h3 class="list-title">ЗІПКА GALLERY DEPT</h3>
+              <h4 class="list-subtitle">2400 UAH</h4>
+              <span class="cart-icon">
+                <img src="./img/zina.jpg" alt="Add to Cart" />
+              </span>
+            </div>
+          </li>
+          <li class="list-item">
+            <img class="list-photo" src="./img/BIGBOY.jpg" alt="Узі" />
+            <div class="list-box">
+              <h3 class="list-title">ДЖИНСИ POLAR BIG BOY</h3>
+              <h4 class="list-subtitle"> 2400 UAH</h4>
+              <span class="cart-icon">
+                <img src="./img/zina.jpg" alt="Add to Cart" />
+              </span>
+            </div>
+          </li>
+          <li class="list-item">
+            <img class="list-photo" src="./img/VANS-1.jpg" alt="Ресторан Seafood" />
+            <div class="list-box">
+              <h3 class="list-title">VANS</h3>
+              <h4 class="list-subtitle">3000 UAH</h4>
+              <span class="cart-icon">
+                <img src="./img/zina.jpg" alt="Add to Cart" />
+              </span>
+            </div>
+          </li>
+          <li class="list-item">
+            <img class="list-photo" src="./img/LYIVI.jpg" alt="Лазерні установки" />
+            <div class="list-box">
+              <h3 class="list-title">Барсетка Louis Vuitton</h3>
+              <h4 class="list-subtitle">4000 UAH</h4>
+              <span class="cart-icon">
+                <img src="./img/zina.jpg" alt="Add to Cart" />
+              </span>
+            </div>
+          </li>
+          <li class="list-item">
+            <img class="list-photo" src="./img/QUES.jpg" alt="Проєкт Boxes" />
+            <div class="list-box">
+              <h3 class="list-title">GUESS</h3>
+              <h4 class="list-subtitle">2000 UAH</h4>
+              <span class="cart-icon">
+                <img src="./img/zina.jpg" alt="Add to Cart" />
+              </span>
+            </div>
+          </li>
+          <li class="list-item">
+            <img class="list-photo" src="./img/COACH.jpg" alt="Inspiration has no Borders" />
+            <div class="list-box">
+              <h3 class="list-title">COACH</h3>
+              <h4 class="list-subtitle">3000 UAH</h4>
+              <span class="cart-icon">
+                <img src="./img/zina.jpg" alt="Add to Cart" />
+              </span>
+          <li class="list-item">
+
+
+
+          </li>
+      </div>
+      </li>
+      <li class="list-item">
+        </ul>
+        </div>
+    </section>
+    </section>
+    <section class="list">
+      <div class="container">
+        <ul class="list-list">
+          <li class="list-item">
+            <img class="list-photo" src="./img/nononononononnono.png" alt="Лабораторне Обладняння" />
+            <div class="list-box">
+              <h3 class="list-title">немає в наявності</h3>
+              <h4 class="list-subtitle">немає</h4>
+              <span class="cart-icon">
+                <img src="./img/zina.jpg" alt="Add to Cart" />
+              </span>
+            </div>
+          </li>
+          <li class="list-item">
+            <img class="list-photo" src="./img/nononononononnono.png" alt="Узі" />
+            <div class="list-box">
+              <h3 class="list-title">немає в наявності</h3>
+              <h4 class="list-subtitle"> немає</h4>
+              <span class="cart-icon">
+                <img src="./img/zina.jpg" alt="Add to Cart" />
+              </span>
+            </div>
+          </li>
+          <li class="list-item">
+            <img class="list-photo" src="./img/nononononononnono.png" alt="Ресторан Seafood" />
+            <div class="list-box">
+              <h3 class="list-title">немає в наявності</h3>
+              <h4 class="list-subtitle">немає</h4>
+              <span class="cart-icon">
+                <img src="./img/zina.jpg" alt="Add to Cart" />
+              </span>
+            </div>
+            
+          <li class="list-item">
+
+
+
+          </li>
+      </div>
+      </li>
+      <li class="list-item">
+        </ul>
+        </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container footer-container">
+      <h2 class="footer-title"><span class="footer-span">Dribsik</span>products</h2>
+      <ul class="footer-list">
+        <li class="footer-item">
+          <address class="foooter-address">
+
+          </address>
+        </li>
+        <li class="footer-item">
+          <h4 class="footer-mail"></h4>
+        </li>
+        <li class="footer-item">
+          <h5 class="footer-tel"></h5>
+        </li>
+      </ul>
+    </div>
+  </footer>
+</body>
+<!-- JavaScript для корзины -->
+<script>
+  function getCart() {
+    return JSON.parse(localStorage.getItem('cart')) || [];
+  }
+
+  function saveCart(cart) {
+    localStorage.setItem('cart', JSON.stringify(cart));
+  }
+
+  function addToCart(item) {
+    const cart = getCart();
+    cart.push(item);
+    saveCart(cart);
+    alert(item + ' додано до корзини!');
+  }
+
+  function removeFromCart(index) {
+    const cart = getCart();
+    cart.splice(index, 1);
+    saveCart(cart);
+    showCart();
+  }
+
+  function showCart() {
+    const cart = getCart();
+    const cartDiv = document.getElementById('cart-items');
+
+    if (cart.length === 0) {
+      cartDiv.innerHTML = "<p>Корзина порожня.</p>";
+    } else {
+      let html = "<strong>У корзині:</strong><ul>";
+      cart.forEach((item, index) => {
+        html += `<li>${item} <span class="remove-btn" onclick="removeFromCart(${index})">[Видалити]</span></li>`;
+      });
+      html += "</ul>";
+      cartDiv.innerHTML = html;
+    }
+
+    cartDiv.style.display = "block";
+  }
+</script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 </html>
